@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- or -->
@@ -24,7 +25,7 @@
         <a href="#" class="logo"><i class='bx bx-laptop'></i>RibeiroStores</a>
 
         <ul class="navegacao">
-            <li><a href="#">Visão Geral</a></li>
+            <li><a href="#">General Vision</a></li>
             <li><a href="#">Teach Specs</a></li>
             <li><a href="#">Reviews</a></li>
             <li><a href="#">Contact Us</a></li>
@@ -35,6 +36,7 @@
             <div id="menu"><i class="bx bx-menu"></i></div>
         </div><!--header-icons-->
 
+
     </header>
 
     <section class="home">
@@ -43,7 +45,7 @@
         </div><!--home-img-->
 
         <div class="home-text">
-            <h1>Notebook <br /> Dell</h1>
+            <h1>Notebook <br /><span class="descr">Dell</span></h1>
             <h5>Better for performance and work</h5>
             <h3>$199.00</h3>
             <a href="#" class="btn">Shop Now</a>
@@ -53,9 +55,9 @@
 
 
     <ul class="main">
-        <li class="row1"><img src="images/note1.webp" onclick="slider('images/note1.webp')" /></li>        
-        <li class="row2"><img src="images/note2.webp" onclick="slider('images/note2.webp')" /></li>        
-        <li class="row3"><img src="images/note3.png" onclick="slider('images/note3.png')" /></li>        
+        <li class="row1"><img src="images/note1.webp" onclick="slider('images/note1.webp', 'Dell' )" /></li>        
+        <li class="row2"><img src="images/note2.webp" onclick="slider('images/note2.webp', 'Lenovo')" /></li>        
+        <li class="row3"><img src="images/note3.png" onclick="slider('images/note3.png', 'Acer')" /></li>        
     </ul>
 
     <script type="text/javascript" src="js/javascript.js"></script>

@@ -1,5 +1,9 @@
-function slider(anything) {
+function slider(anything, marca) {
 	document.querySelector('.one').src = anything;
+
+	var text = document.querySelector('.descr');
+
+	text.textContent = marca;
 }
 
 let menu = document.querySelector('#menu-icon');
