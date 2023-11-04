@@ -10,11 +10,14 @@
 :root { /* 'root' serve para criar variáveis para modificação mais fácil no Css */
 
 	/*Paleta de cores*/
-	--bg-color: #153d6f;
+	--bg-color: #041f40;
 	--tex-color: #ffffff;
 	--main-color: #00e8ff;
 	--other-color: #fcfcfc;
 	--description-color: #636567;
+	--row1: var(--main-color);
+	--row2: #fbb341;
+	--row3: #70fa82;
 
 	/*Fonte*/
 	--h1-font: 4rem;
@@ -23,6 +26,9 @@
 
 	/*Transição*/
 	--transition-sec: all .2s ease;
+
+	/*Tamanho*/
+	--row-size: 75px;
 }
 
 body {
@@ -136,7 +142,7 @@ header {
 	max-width: 100%;
 	width: 28rem;
 	height: auto;
-	margin-left: 25%;
+	margin-left: 17%;
 }
 
 .btn {
@@ -155,5 +161,64 @@ header {
 		border: 2px solid var(--tex-color);
 		color: var(--bg-color);
 		font-weight: 700;
+	}
+
+.main {
+	position: absolute;
+	top: 50%;
+	right: 93%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+	.main img {
+		height: auto;
+		width: 50px;
+		max-width: 100%;
+	}
+
+.row1 {
+	background-color: var(--row1);
+	height: var(--row-size);
+	width: var(--row-size);
+	border-radius: 50%;
+	justify-content: center;
+	transition: var(--transition-sec);
+	cursor: pointer;
+	display: inline-flex;
+}
+
+	
+
+.row2 {
+	background-color: var(--row2);
+	height: var(--row-size);
+	width: var(--row-size);
+	border-radius: 50%;
+	justify-content: center;
+	transition: var(--transition-sec);
+	cursor: pointer;
+	display: inline-flex;
+}
+
+	
+
+.row3 {
+	background-color: var(--row3);
+	height: var(--row-size);
+	width: var(--row-size);
+	border-radius: 50%;
+	justify-content: center;
+	transition: var(--transition-sec);
+	cursor: pointer;
+	display: inline-flex;
+}
+
+	.row1:hover, .row2:hover, .row3:hover {
+		transform: translateY(-5px);
 	}
 
